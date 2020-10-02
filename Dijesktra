@@ -1,3 +1,4 @@
+import java.io.*;
 public class ShortestPath { 
     static final int V = 9; 
 	int minDistance(int dist[], Boolean sptSet[]) 
@@ -36,7 +37,7 @@ public class ShortestPath {
 		} 
         printSolution(dist, V); 
 	} 
-	public static void main(String[] args) 
+	public static void main(String[] args)throws IOException 
 	{ 
 		int graph[][] = new int[][] { { 0, 4, 0, 0, 0, 0, 0, 8, 0 }, 
 									{ 4, 0, 8, 0, 0, 0, 0, 11, 0 }, 
